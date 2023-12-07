@@ -1,0 +1,234 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url(ImagesC/bread.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.header {
+    list-style: none;
+    color: rgb(15, 15, 15);
+    margin-top: -1%;
+    margin-left: -2%;
+    background-size: 100px;
+    background-color: white;
+    width: 102%;
+    height: 90px;
+  }
+
+  .top {
+    color: rgba(14, 13, 13, 0.671);
+    list-style: none;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1%;
+    padding: 8px;
+    display:inline-block;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    left: 33%;
+    margin: 6px;
+    margin-top: 3%;
+    top: 10px;
+  }
+
+  .top a {
+    text-decoration: none;
+    color: rgba(102, 97, 97, 0.671);
+    text-transform: capitalize;
+  }
+
+  .top::after {
+    color: black;
+    content: '';
+    height: 3px;
+    width: 0;
+    background: red;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    transition: 0.5s;
+
+  }
+
+  .top:hover::after {
+    color: black;
+    width: 100%;
+
+  }
+
+  .logo {
+    font-size: 2.5rem;
+    position: relative;
+    left: -6%;
+    font-size: 35px;
+  }
+
+
+  .payment-options {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.payment-option {
+    margin-bottom: 15px;
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+
+label {
+    display: block;
+    cursor: pointer;
+    padding-left: 25px;
+    position: relative;
+    font-size: 18px;
+}
+
+
+label:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+input[type="radio"]:checked + label:before {
+    background-color: #ff9f43;
+}
+
+
+.confirm-payment {
+    background-color: #ff9f43;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 15px auto 0;
+    
+}
+.confirm-payment a{
+    text-decoration: none;
+    color: white;
+}
+
+.tables-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    z-index: 1000;
+}
+   
+   table {
+        list-style: none;
+        color: rgb(15, 15, 15);
+        margin-top: -1%;
+        margin-left: -.1%;
+        background-size: 100px;
+        background-color: transparent;
+        width: 110%;
+        height: 90px;
+    background-repeat: no-repeat;
+    
+   }
+   .menu {
+    color: rgba(14, 13, 13, 0.671);
+    list-style: none;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1%;
+    padding: 8px;
+    display:inline-block;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    left: 1%;
+    margin: 6px;
+    margin-top: 3%;
+    top: 10px;
+    transition: 0.5s;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.671);
+    text-transform: uppercase;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px;
+    transition: 0.5s;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  .menu::after {
+    color: black;
+    content: '';
+    height: 3px;
+    width: 0;
+    background: black;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    transition: 0.5s;
+
+  }
+
+  .menu:hover::after {
+    color: black;
+    width: 83%;
+  }
+
+  input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=text]:focus {
+    width: 80%;
+  }
